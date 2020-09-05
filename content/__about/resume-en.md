@@ -1,13 +1,14 @@
 ---
-title: 'about'
-date: 2019-1-27 16:21:13
-lang: 'en'
+title: 'About'
+date: 2020-9-5 22:00:00
+lang: 'ko'
 ---
 
-# Your name
+## 이름
 
-<div align="center">
+지환
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+## 소개
 
-</div>
+프론트 엔드 개발자 지망생입니다.  
+생각하고 고민하는 개발자가 되고 싶습니다.
