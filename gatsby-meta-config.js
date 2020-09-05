@@ -3,10 +3,10 @@ module.exports = {
   description: `어떤 분야든 공부하면서 정리해서 올리는 블로그`,
   author: `[박지환]`,
   introduction: `생각하고 고민하는 개발자가 되고 싶은 프론트엔드 개발자 지망생입니다.`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://jihwan-blog.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: `https://github.com/parkjihwanjay`, // Your GitHub account
+    github: `parkjihwanjay`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
@@ -26,5 +26,5 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: 'UA-151328015-2', // Add your google analytics tranking ID
 }
