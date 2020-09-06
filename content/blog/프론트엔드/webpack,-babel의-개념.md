@@ -16,7 +16,7 @@ static module bundler for modern javascript applications.
 
 webpack은 자바스크립트의 [모듈 번들러](##모듈 번들러)입니다.
 
-- webpackd은 Node.js 8버전 이상에서 돌아갑니다.
+- webpack은 `Node.js` 8버전 이상에서 돌아갑니다.
 
 ### 모듈 번들러란?
 
@@ -28,9 +28,9 @@ webpack은 자바스크립트의 [모듈 번들러](##모듈 번들러)입니다
 
 #### 모듈 번들링의 원리
 
-Entry point부터 시작해서 dependency graph를 만들고 이 graph를 기반으로 모듈들을 몇개의 bundle로 만듭니다.(보통 하나)
+`Entry point`부터 시작해서 dependency graph를 만들고 이 graph를 기반으로 모듈들을 몇개의 bundle로 만듭니다.(보통 하나)
 
-1. [entry point](#### entry point)의 의존성을 분석합니다.
+1. **entry point**의 의존성을 분석합니다.
 2. 그 다음 파일의 의존성을 파악합니다.
 
 모든 모듈의 의존성을 파악할 때까지 2단계를 계속 반복합니다.
@@ -68,7 +68,7 @@ Babel은 ES6이상의 문법 코드들을 예전 브라우저에서도 돌아갈
 바벨이 하는 일
 
 - 구문을 바꿔줍니다.
-- Polyfill을 넣어줍니다.
+- `Polyfill`을 넣어줍니다.
   - polyfill은 특정 브라우저에서 동작하지 않는 코드의 기능을 실행시켜주는 다른 코드입니다.
 - 코드를 바꿔주기
 

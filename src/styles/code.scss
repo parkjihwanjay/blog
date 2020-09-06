@@ -8,6 +8,19 @@
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
 @import './variables.scss';
 
+p,
+li {
+  margin-bottom: 33px !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 33px !important;
+  color: $navigator-text-color !important;
+}
 .gatsby-highlight-code-line {
   background-color: hsla(207, 95%, 15%, 1);
   display: block;

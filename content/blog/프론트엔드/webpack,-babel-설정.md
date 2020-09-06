@@ -14,37 +14,38 @@ draft: false
 
 먼저, 필요한 모듈들을 깔겠습니다.
 
-babel의 모듈들은 7버전부터 @babel로 시작하며 npm으로 받을 수 있습니다.
+babel의 모듈들은 7버전부터 `@babel`로 시작하며 `npm`으로 받을 수 있습니다.
 
-- @babel/core는 babel의 핵심 기능입니다.
+- `@babel/core`는 babel의 핵심 기능입니다.
 
-- @babel/preset-env는 가장 많이 사용하는 preset으로 필수적인 plugin들이 모여있습니다.
+- `@babel/preset-env`는 가장 많이 사용하는 preset으로 필수적인 plugin들이 모여있습니다.
 
-- @babel/cli는 터미널에서 bable를 실행하는 모듈입니다.
+- `@babel/cli`는 터미널에서 bable를 실행하는 모듈입니다.
 
 ```markdown
 // npm 프로젝트를 시작하는 모든 옵션을 yes로 설정하겠다.
-$ npm init -y
+\$ npm init -y
+
 // 해당 모듈을 devdependency로 깔겠다.
 // @babel/cli는 굳이 안깔아도 됩니다.
-$ npm i @babel/core @babel/cli @babel/preset-env -D
+\$ npm i @babel/core @babel/cli @babel/preset-env -D
 ```
 
 다음으로, babel 설정을 하겠습니다.
 
 Babel 설정은 CLI로 해도 되고 여러 방법이 있지만 저는 config 파일에 설정해보겠습니다.
 
-babel.config.json 파일은 전역에 적용하는 설정,
+`babel.config.json` 파일은 전역에 적용하는 설정,
 
-.babelrc.json은 프로젝트의 일부에 적용하는 설정이라고 아시면 됩니다.
+`.babelrc.json`은 프로젝트의 일부에 적용하는 설정이라고 아시면 됩니다.
 
-babel 공식 페이지에서는 babel.config.json 사용을 권장하고 있습니다.
+babel 공식 페이지에서는 `babel.config.json` 사용을 권장하고 있습니다.
 
-babel 자체가 babel.config.json 파일을 사용한다고 하네요.
+babel 자체가 `babel.config.json` 파일을 사용한다고 하네요.
 
-저는 babel.config.json 파일에 설정해보겠습니다.
+저는 `babel.config.json` 파일에 설정해보겠습니다.
 
-프로젝트 root에 babel.config.json 파일을 만들어주세요.
+프로젝트 root에 `babel.config.json` 파일을 만들어주세요.
 
 **babel.config.json**
 
@@ -240,7 +241,7 @@ module.exports = merge(common, {
 
 배포 모드의 경우 성능 최적화를 위해 기본적인 파일 압축 등의 빌드 과정이 추가됩니다.
 
-이제 package.json에서 script 부분을 추가해줍니다.
+이제 `package.json`에서 script 부분을 추가해줍니다.
 
 **package.json**
 
@@ -256,7 +257,7 @@ module.exports = merge(common, {
 ...
 ```
 
-이제 **npm run dev**를 하면 webpack-dev-server가 돌아가고 **npm run build**를 하면 build한 파일을 diet 폴더 안에 넣어줍니다.
+이제 **npm run dev**를 하면 webpack-dev-server가 돌아가고 **npm run build**를 하면 build한 파일을 dist 폴더 안에 넣어줍니다.
 
 여기까지 babel과 webpack의 기본 설정입니다.
 
